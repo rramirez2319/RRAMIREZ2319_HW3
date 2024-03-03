@@ -1,0 +1,86 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a; /* Deep black for a rich background */
+    color: #dcdcdc; /* Soft white for contrast */
+}
+
+header {
+    background-color: #1a1a1a; /* Slightly lighter black for the header */
+    color: #dcdcdc; /* Soft white for text */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #d8d8d8; /* Silver bottom border */
+}
+
+.movie-poster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Soften the edges of the movie poster */
+    box-shadow: 0 0 20px rgba(220, 220, 220, 0.7); /* Silver glow for prominence */
+}
+
+#movie-intro {
+    background-color: #121212; /* Very dark grey */
+    padding: 40px;
+    color: #dcdcdc; /* Soft white for main text */
+    overflow: auto; /* Clear floats */
+}
+
+#movie-intro img {
+    width: 200px;
+    float: left;
+    margin-right: 20px; /* Space between the poster and the introduction text */
+}
+
+#movie-review {
+    padding: 20px;
+    background-color: #1a1a1a; /* Slightly lighter black for the content area */
+    margin: 20px auto;
+    max-width: 800px; /* Max width for good reading experience */
+    border: 1px solid #d8d8d8; /* Silver border for definition */
+    border-radius: 5px; /* Rounded corners for style */
+  
+}
+
+h1 {
+    font-size: 3rem; /* Larger font size for the main title */
+    color: #e6e6e6; /* Brighter white for emphasis */
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #d8d8d8; /* Silver color for subheadings */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    line-height: 1.6; /* More readable line spacing */
+    color: #c2c2c2; /* Light grey for paragraph text */
+}
+
+footer {
+    background-color: #1a1a1a; /* Slightly lighter black for the footer */
+    color: #dcdcdc; /* Soft white for text */
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #d8d8d8; /* Silver top border for a sleek look */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .movie-poster,
+    #movie-intro img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto; /* Center the image on smaller screens */
+    }
+    #movie-intro, #movie-review {
+        padding: 20px;
+        margin: 20px;
+    }
+}
